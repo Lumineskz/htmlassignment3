@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.table-container {
+    max-width: 80%;
+    margin: 20px auto;
+    
+}
+
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+
+.grades-table th {
+    background-color: #4c6daf;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+
+.grades-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.grades-table tr:nth-child(even) {
+    background-color: #d1ebff;
+}
+
+.grades-table tr:nth-child(odd) {
+    background-color: #e8efff;
+}
+
+
+.grades-table tr:hover {
+    background-color: #d2ffd7;
+}
+
+
+@media (max-width: 768px) {
+    .grades-table th, .grades-table td {
+        padding: 8px;
+    }
+
+    .table-container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grades-table th, .grades-table td {
+        padding: 5px;
+    }
+}

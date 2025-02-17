@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#" style="color: white; text-decoration: none; font-size: 24px;">Logo</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>Responsive navigation bar</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sunt molestiae, natus unde expedita quidem recusandae vitae corrupti culpa illum cupiditate odio commodi itaque dignissimos facere veritatis repellendus alias laudantium, totam blanditiis voluptas. Sequi hic dolore qui natus, omnis consequatur deleniti iste officiis beatae quia eligendi eius, facilis nisi et accusamus vel, ducimus perferendis ullam. Doloremque alias maxime repellendus dolor, fugiat qui amet minima explicabo non, quo exercitationem consequatur at. Minima soluta aspernatur eius voluptatem rem voluptas asperiores corporis fugiat assumenda possimus cum obcaecati temporibus, optio doloremque dolorum. Voluptatibus accusamus aut quam libero quaerat hic doloremque nobis vero ea nihil?</p>
+    </div>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
